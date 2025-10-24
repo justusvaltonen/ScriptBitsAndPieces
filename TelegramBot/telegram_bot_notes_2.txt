@@ -1,0 +1,35 @@
+
+---------------------------------------------------------------------------------------------------------------
+
+source bin/activate
+pip install requests feedparser
+pip install python-dotenv
+
+touch .env
+
+.env:
+TELEGRAM_BOT_TOKEN=123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11
+TELEGRAM_CHAT_ID=123456789
+
+Never commit .env to GitHub! Add it to .gitignore.
+
+
+echo ".env" >> .gitignore
+echo "news_state.json" >> .gitignore   # Optional: don't track seen articles
+echo "__pycache__/" >> .gitignore
+
+
+---------------------------------------------------------------------------------------------------------------
+-Secret management at least on the surface
+
+More Sites: Add to FEEDS dict (e.g., 'Ars Technica': 'http://feeds.arstechnica.com/arstechnica/index').
+Filters: Add keywords (e.g., only notify if "drone" or "vulnerability" in title).
+Frequency: For real-time, set interval to 300s (5 min) — but respect site limits (~1-2 req/min).
+No RSS?: If a site lacks RSS, we can scrape (like before), but RSS is cleaner/ethical.
+
+Best Practice: Use a .env File + python-dotenv
+This keeps secrets out of code, out of version control, and easy to manage.
+
+Step 1: Install python-dotenv
+
+---------------------------------------------------------------------------------------------------------------

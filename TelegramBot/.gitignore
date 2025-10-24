@@ -1,0 +1,4 @@
+.env
+news_state.json
+ignore_me.txt
+__pycache__/

@@ -1,0 +1,139 @@
+ 
+AI used to create this project: Grok.com
+
+
+Step 1: Create a Telegram Bot
+-Open Telegram and search for @BotFather (it's an official bot).
+-Start a chat and send /newbot.
+-Follow the prompts: Give it a name (e.g., "My Notification Bot") and a username ending in "bot" (e.g., "my_notification_bot").
+-BotFather will give you a bot token (looks like 123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11). Save this—it's secret!
+
+
+https://api.telegram.org/bot19:AAgg_aeggag/getUpdates
+https://api.telegram.org/bot<TOKEN>/<command>
+
+sudo apt install python3-requests
+
+
+Name:                InfoTorvi
+Username:            InfoTorviBot
+HTTP API Token:      21:AA_0Ng-a
+About Telegram bots: https://core.telegram.org/bots
+Bot API manual:      https://core.telegram.org/bots/api
+Inline Mode:         https://core.telegram.org/bots/inline
+Privacy Mode:        https://core.telegram.org/bots/features#privacy-mode
+Webapps:             https://core.telegram.org/bots/webapps
+Games:               https://core.telegram.org/bots/games
+Chat ID:             19
+---------------------------------------------------------------------------------------------------------------
+"BotFather is the one bot to rule them all. Use it to create new bot accounts and manage your existing bots.
+About Telegram bots: https://core.telegram.org/bots
+Bot API manual:      https://core.telegram.org/bots/api
+Contact @BotSupport if you have questions about the Bot API."
+https://core.telegram.org/bots/api
+
+I can help you create and manage Telegram bots. If you're new to the Bot API, please see the manual (https://core.telegram.org/bots).
+You can control me by sending these commands:
+/newbot - create a new bot
+/mybots - edit your bots
+/help
+
+Edit Bots
+/setname - change a bot's name
+/setdescription - change bot description
+/setabouttext - change bot about info
+/setuserpic - change bot profile photo
+/setcommands - change the list of commands
+/deletebot - delete a bot
+
+Bot Settings
+/token - get authorization token
+/revoke - revoke bot access token
+/setinline - toggle inline mode (https://core.telegram.org/bots/inline)
+/setinlinegeo - toggle inline location requests (https://core.telegram.org/bots/inline#location-based-results)
+/setinlinefeedback - change inline feedback (https://core.telegram.org/bots/inline#collecting-feedback) settings
+/setjoingroups - can your bot be added to groups?
+/setprivacy - toggle privacy mode (https://core.telegram.org/bots/features#privacy-mode) in groups
+
+Web Apps
+/myapps - edit your web apps (https://core.telegram.org/bots/webapps)
+/newapp - create a new web app (https://core.telegram.org/bots/webapps)
+/listapps - get a list of your web apps
+/editapp - edit a web app
+/deleteapp - delete an existing web app
+
+Games
+/mygames - edit your games (https://core.telegram.org/bots/games)
+/newgame - create a new game (https://core.telegram.org/bots/games)
+/listgames - get a list of your games
+/editgame - edit a game
+/deletegame - delete an existing game
+
+
+
+Done! Congratulations on your new bot. You will find it at t.me/InfoTorviBot. You can now add a description, about section and profile picture for your bot, see /help for a list of commands. By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. Just make sure the bot is fully operational before you do this.
+
+Use this token to access the HTTP API: a:ds654
+
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
+
+{"ok":true,"result":[{"update_id":526937796,
+"message":{"message_id":6,"from":{"id":19,"is_bot":false,"first_name":"justus orisit","username":"judethegrat","language_code":"en"},"chat":{"id":19,"first_name":"justus orisit","username":"judethegrat","type":"private"},"date":1761279169,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}
+
+
+
+Tips
+
+Security: Never hardcode your token in shared code—use environment variables (e.g., os.environ['BOT_TOKEN']).
+Rate Limits: Telegram allows ~30 messages/second per bot, but don't spam.
+Run 24/7: Deploy on a server (e.g., Heroku, Raspberry Pi) or use a scheduler like cron.
+Advanced: For two-way interaction (e.g., commands), use the python-telegram-bot library: pip install python-telegram-bot.
+
+If you specify the exact event (e.g., "notify when stock price changes"), I can customize the code further! Let me know if you hit any issues.
+
+
+
+alias runbot='source ~/ScriptBitsAndPieces/TelegramBot/bin/activate && python ~/ScriptBitsAndPieces/TelegramBot/bot.py'
+
+
+.bashrc
+
+cd() {
+  builtin cd "$@"
+  if [ -f "ScriptBitsAndPieces/TelegramBot/env/bin/activate" ]; then
+    source ScriptBitsAndPieces/TelegramBot/env/bin/activate
+    echo "Virtual env activated"
+  fi
+}
+
+Now cd ScriptBitsAndPieces/TelegramBot auto-activates!
+
+
+Working Example: Monitor Bitcoin Price on CoinGecko
+We’ll:
+
+Check Bitcoin price every 60 seconds
+Send Telegram alert if price changes by >1%
+
+
+Error checking price: 403 Client Error: Forbidden for url: https://www.coingecko.com/en/coins/bitcoin
+
+403 Forbidden means CoinGecko blocked your request — they detect bots and block generic requests without a proper browser-like fingerprint.
+This is super common now. But don’t worry — we’ll bypass it easily using a realistic browser header + optional rotating User-Agent.
+
+Didn't work BTW, but the API did
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
