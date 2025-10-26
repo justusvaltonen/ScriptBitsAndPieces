@@ -81,7 +81,7 @@ For a description of the Bot API, see this page: https://core.telegram.org/bots/
 
 
 {"ok":true,"result":[{"update_id":526937796,
-"message":{"message_id":6,"from":{"id":19,"is_bot":false,"first_name":"justus orisit","username":"judethegrat","language_code":"en"},"chat":{"id":19,"first_name":"<users name>","username":"<username>","type":"private"},"date":1761279169,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}
+"message":{"message_id":6,"from":{"id":19,"is_bot":false,"first_name":"<users name>","username":"<username>","language_code":"en"},"chat":{"id":19,"first_name":"<users name>","username":"<username>","type":"private"},"date":1761279169,"text":"/start","entities":[{"offset":0,"length":6,"type":"bot_command"}]}}]}
 
 
 
