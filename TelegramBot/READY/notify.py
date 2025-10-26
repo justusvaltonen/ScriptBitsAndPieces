@@ -8,8 +8,8 @@ from bs4 import BeautifulSoup
 import time
 # import urllib.parse
 
-BOT_TOKEN = '8279341157:AAGTTOOjAA9pBNqM_0skNg-mChYjs48sKc0'
-CHAT_ID = '1722538822'
+BOT_TOKEN = ''
+CHAT_ID = ''
 
 
 def check_website_for_changes(url, selector):
