@@ -14,8 +14,8 @@ import random
 # import urllib.parse
 
 # === CONFIGURE THESE ===
-BOT_TOKEN = '8279341157:AAGTTOOjAA9pBNqM_0skNg-mChYjs48sKc0'
-CHAT_ID = '1722538822'
+BOT_TOKEN = ''
+CHAT_ID = ''
 # ========================
 
 # List of real browser User-Agents (rotate to avoid blocks)
