@@ -1,4 +1,6 @@
 .env
+.gitignore
+bits_pieces_classic_oct25.txt
 news_state.json
 ignore_me.txt
 __pycache__/
