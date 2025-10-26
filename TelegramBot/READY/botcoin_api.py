@@ -8,14 +8,16 @@
 # python ~/ScriptBitsAndPieces/TelegramBot/bot.py'
 
 import requests
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 import time
 import random
+import os
 # import urllib.parse
 
 # === CONFIGURE THESE ===
-BOT_TOKEN = ''
-CHAT_ID = ''
+BOT_TOKEN = os.getenv('TORVI_BOT_TOKEN')
+CHAT_ID = os.getenv('TORVI_CHAT_ID')
+QS = 'ids=bitcoin&vs_currencies=usd'
 # ========================
 
 # List of real browser User-Agents (rotate to avoid blocks)
@@ -63,7 +65,7 @@ previous_price = None
 
 def check_bitcoin_price():
     global previous_price
-    url = "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+    url = f"https://api.coingecko.com/api/v3/simple/price?${QS}"
 
     try:
         response = requests.get(url, headers=get_random_headers(), timeout=10)
@@ -71,7 +73,8 @@ def check_bitcoin_price():
         current_price = data['bitcoin']['usd']
 
         if previous_price is None:
-            send_telegram_notification(f"Bitcoin Bot (API) Live!\n<b>${current_price:,.0f}</b>")
+            send_telegram_notification(
+                f"Bitcoin Bot (API) Live!\n<b>${current_price:,.0f}</b>")
         else:
             change = ((current_price - previous_price) / previous_price) * 100
             if abs(change) >= 1.0:

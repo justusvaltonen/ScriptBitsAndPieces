@@ -8,8 +8,8 @@ from bs4 import BeautifulSoup
 import time
 # import urllib.parse
 
-BOT_TOKEN = ''
-CHAT_ID = ''
+BOT_TOKEN = os.getenv('TORVI_BOT_TOKEN')
+CHAT_ID = os.getenv('TORVI_CHAT_ID')
 
 
 def check_website_for_changes(url, selector):
