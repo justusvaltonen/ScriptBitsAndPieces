@@ -1,0 +1,9 @@
+
+python3 main.py input.jpg --width 50 --full-hdr
+python3 main.py input.jpg --width 80 --3-gradient
+python3 main.py input.jpg --html out.html --color
+python3 main.py input.jpg --3-gradient -o 3gradient.txt
+python3 main.py input.jpg --full-hdr -o f_hdr.txt
+python3 main.py input.jpg --color-terminal -o c_terminal.txt
+python3 main.py input.jpg --color-terminal
+
