@@ -1,0 +1,111 @@
+
+Project Name:
+Project Goal:
+Tech stack: ["AI":"", "Cloud":"", "Notation language":"<md, yaml, json for example>"]
+OS Restrictions: ["Developing", "End product"]
+Chosen main platform: ["Developing", "End product"]
+IDE used mainly:
+Languages and scipting used:
+Manual created: (On the run | later), (By me | AI | Man pages?)
+Log all dev history:
+Project filestructure: ["Developing":"", "End product":""]
+Version control:
+Backups:
+
+Next subtask:
+Discoveries made:
+Research topics found:
+Achievements:
+Checkpoints:
+
+
+JSON
+---------------------------
+{
+  "Project Name": "",
+  "Project Goal": "",
+  "Tech stack": {
+    "AI": "",
+    "Cloud": "",
+    "Notation language": ""
+  },
+  "OS Restrictions": {
+    "Developing": "",
+    "End product": ""
+  },
+  "Chosen main platform": {
+    "Developing": "",
+    "End product": ""
+  },
+  "IDE used mainly": "",
+  "Languages and scripting used": "",
+  "Manual created": {
+    "Status": "",      // On the run / later
+    "Author": ""       // By me / AI / Man pages?
+  },
+  "Log all dev history": "",
+  "Project filestructure": {
+    "Developing": "",
+    "End product": ""
+  },
+  "Version control": "",
+  "Backups": "",
+  "Next subtask": "",
+  "Discoveries made": "",
+  "Research topics found": "",
+  "Achievements": "",
+  "Checkpoints": ""
+}
+
+
+
+
+YAML
+-----------------
+Project Name: "ASCII_From_Image"
+Project Goal: "ASCII art out of visual input. Final version should have realtime converting available, where your webcam will convert you to 'adslkgjdlskäh'"
+Tech stack:
+  AI:
+    "Claude",
+    "Deepseek",
+    "Grok",
+    "Leonardo"
+    "Perplexity"
+  Cloud: ""
+  Notation language: ""
+OS Restrictions:
+  Developing: "Easier with Linux IMO"
+  End product: "Linux functionality will be minimum. Android will work. Not sure about Windows."
+Chosen main platform:
+  Developing: "Linux, Ubuntu Studio"
+  End product: "Linux"
+IDE used mainly: "CLI"
+Languages and scripting used:
+  "Python3"
+    "ImageIO",
+    "Argparse",
+    "PIL",
+    "OS",
+    "Sys",
+    "datetime",
+    "CSV",
+    "Threading",
+    "Subprocess",
+    "Queue",
+    "Matplotlib",
+    "Pandas",
+    "Time"
+Manual created:
+  Status: ""      # On the run / later
+  Author: ""      # By me / AI / Man pages?
+Log all dev history: ""
+Project filestructure:
+  Developing: ""
+  End product: ""
+Version control: "Git + GitHub"
+Backups: ""
+Next subtask: ""
+Discoveries made: ""
+Research topics found: ""
+Achievements: ""
+Checkpoints: ""
