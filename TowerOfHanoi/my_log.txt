@@ -1,0 +1,40 @@
+
+Created:	+++03.11.2025+++
+################################################################################################
+
+------------------------------------------------------------------------------------------------
+________________
+Beginning words:
+I used AI to basically do everything involving typing and code creation. I did have to make some specifications and ask additional questions so the end result would be somehow satisfactory.
+AI used in the beginning: "Le Chat / Mistral AI"
+
+Suggested file naming policy that I changed a bit:
+index.html		==> interface.html
+style.css		==> 
+script.js		==> game_logic.js
+
+Suggested additions:
+-Reset button					Done
+-Move counter					Done
+-Animations					Done
+	-Smooth Disk Movement (Animation)	Done
+	-Color Gradients for Disks		Done
+	-Hover Effects for Rods			Done
+	-Win Animation				Done
+-Drag n' drop					Done
+
+My additions:
+-Disk amount option
+
+------------------------------------------------------------------------------------------------
+The all so familiar feature of AI coding happened again. When the conversation got a bit longer, the AI breaks it's own code. Trying to fix it by pointing out where the issue is, results in very condesending response. After that the AI blows up it's code even worse. Trying to fix the code using AI prompting makes things worse each time and results in "ahh, you are right, that is where the issue is, now that it's fixed things are better than perfect" sort of response. Always the AI assures that the next fix is really a fix that works and it understands my frustration. This goes on forever and the code never gets fixed and files start to bloat with unnecessary code that only bloats the software.
+
+I now predict, since this is happening, that I will run out of prompting tokens, or whatever it is that they are called in Mistral.
+
+-- I was wrong. Copy-Pasting the correction code makes things work like a charm. Happy to be wrong once again. --
+
+
+------------------------------------------------------------------------------------------------
+################################################################################################
+## End of File
+################################################################################################

@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tower of Hanoi</h1>
+    <div>
+        <label for="disk-count">Number of Disks: </label>
+        <select id="disk-count" onchange="changeDiskCount()">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </div>
+    <div class="rod-container">
+        <div class="rod" id="rod1"></div>
+        <div class="rod" id="rod2"></div>
+        <div class="rod" id="rod3"></div>
+    </div>
+    <div class="controls">
+        <!-- Removing button styled UI and replacing with clickops -->
+        <!-- <button onclick="moveDisk('rod1', 'rod2')">Move Rod 1 → Rod 2</button> -->
+        <!-- <button onclick="moveDisk('rod1', 'rod3')">Move Rod 1 → Rod 3</button> -->
+        <!-- <button onclick="moveDisk('rod2', 'rod1')">Move Rod 2 → Rod 1</button> -->
+        <!-- <button onclick="moveDisk('rod2', 'rod3')">Move Rod 2 → Rod 3</button> -->
+        <!-- <button onclick="moveDisk('rod3', 'rod1')">Move Rod 3 → Rod 1</button> -->
+        <!-- <button onclick="moveDisk('rod3', 'rod2')">Move Rod 3 → Rod 2</button> -->
+
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+    <p id="message"></p>
+    <p>Moves: <span id="move-count">0</span></p>
+    <p>Minimum moves: <span id="min-moves">7</span></p>
+
+    <script src="game_logic.js"></script>
+</body>
+</html>
+
