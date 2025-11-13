@@ -1,0 +1,15 @@
+ 
+STRUCTURE
+
+MyUnitedStatesOfWhatever/
+│
+├── ascii_video.py        # Entry point & main loop (CLI + sync logic)
+├── audio_manager.py      # All sound extraction/playback logic
+├── video_player.py       # Frame reading, ASCII conversion, and timing control
+├── ascii_core.py         # The existing image→ASCII converter (already good)
+└── Utils/
+    ├── hud.py            # Optional: FPS / sync HUD overlay or logging
+    └── __init__.py
+
+
+

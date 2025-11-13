@@ -1,0 +1,26 @@
+ 
+How to use it
+You can integrate the HUD with zero clutter inside video_player.py.
+
+At the top of the file:
+
+from utils.hud import PlaybackHUD
+
+
+Then in VideoPlayer.play() before the loop:
+
+hud = PlaybackHUD(enable_logging=True)
+
+
+And inside the frame loop (right after print(rendered_output)):
+
+hud.update(self.sync_offset, self.total_skipped)
+
+
+Finally, after playback ends:
+
+hud.summary()
+
+
+
+AS I'M ALREADY LATE, I DIDN'T TEST MY STUFF AND PUSH IT OUT TO GH NONTHELESS
